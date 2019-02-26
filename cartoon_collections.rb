@@ -5,9 +5,9 @@ end
 end
 
 def summon_captain_planet
-  planeteer_calls.map { |call|
-    call.capitalize << "!"
-  }
+  planeteer_calls.collect do |planeteer_call|
+    planeteer_call.capitalize << "!"
+  end
 end
 
 def long_planeteer_calls
