@@ -11,7 +11,9 @@ def summon_captain_planet
 end
 
 def long_planeteer_calls
-  arrayCalls.any? {|call| call.length > 4 }
+  planeteer_calls.any? do |planeteer_call|
+    planeteer_call.length > 4
+  end
 end
 
 def find_the_cheese
